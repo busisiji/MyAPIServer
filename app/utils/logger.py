@@ -1,4 +1,4 @@
-# app/utils/logger.py
+# 初始化日志系统，支持控制台输出和文件写入，并使用 JSON 格式记录日志。
 import logging
 import sys
 import os

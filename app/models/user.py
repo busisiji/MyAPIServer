@@ -1,5 +1,5 @@
-# app/models/user.py
-from peewee import Model, IntegerField, CharField, TextField
+# 使用 Peewee ORM 定义用户数据模型。
+from peewee import Model, IntegerField, CharField
 from app.db.database import db
 
 class BaseModel(Model):

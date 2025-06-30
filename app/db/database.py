@@ -1,4 +1,4 @@
-# app/db/database.py
+# 根据 config.py 中的 DATABASE_URL 配置数据库连接。
 import peewee
 from config import settings
 

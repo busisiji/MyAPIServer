@@ -1,4 +1,4 @@
-# app/utils/exceptions.py
+# 统一定义业务异常，提升错误可读性和一致性。
 from fastapi import HTTPException
 
 class AppException(HTTPException):

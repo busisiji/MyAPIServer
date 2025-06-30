@@ -1,8 +1,15 @@
-# main.py
+# 这是项目的启动文件，主要职责包括：
+# 初始化日志系统；
+# 初始化数据库连接并创建表；
+# 注册中间件（如请求日志）；
+# 注册路由；
+# 添加全局异常处理器；
+# 启动 Uvicorn 服务器。
+
 from fastapi import FastAPI
 import uvicorn
 
-from app.api.routes import router as api_router
+from app.api.user_routes import router as user_router
 from app.utils.logger import setup_logger
 from app.exceptions.handler import add_exception_handlers
 from app.middleware.request_logger import log_requests
@@ -17,11 +24,11 @@ db.create_tables([User], safe=True)
 
 app = FastAPI(debug=False)
 
-# 注册中间件（必须放在路由注册前）
+# 注册中间件
 app.middleware("http")(log_requests)
 
 # 注册路由
-app.include_router(api_router, prefix="/api")
+app.include_router(user_router)
 
 # 添加全局异常处理器
 add_exception_handlers(app)

@@ -1,4 +1,4 @@
-# app/middleware/request_logger.py
+# 请求日志中间件
 import time
 import logging
 from fastapi import Request
