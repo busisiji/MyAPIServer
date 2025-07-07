@@ -1,6 +1,6 @@
 # 这一层封装了与用户相关的业务逻辑，实现接口与数据访问的解耦。
-from app.models.user import User
-from app.utils.exceptions import ResourceNotFoundException, InvalidInputException
+from api.models.user import User
+from api.utils.exceptions import ResourceNotFoundException, InvalidInputException
 
 def get_all_users():
     return list(User.select())

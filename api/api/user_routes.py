@@ -1,6 +1,6 @@
 # 该模块定义了 /users/ 路由下的所有 RESTful 接口，使用标准 HTTP 方法设计。
 from fastapi import APIRouter, HTTPException
-from app.services.user_service import (
+from api.services.user_service import (
     get_all_users,
     get_user_by_id,
     create_user,

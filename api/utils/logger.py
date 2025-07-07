@@ -26,7 +26,7 @@ def setup_logger(debug: bool = False):
 
     # 文件处理器（带轮转）
     file_handler = RotatingFileHandler(
-        filename=os.path.join(LOG_DIR, 'app.log'),
+        filename=os.path.join(LOG_DIR, 'api.log'),
         maxBytes=5 * 1024 * 1024,
         backupCount=3,
         encoding='utf-8'

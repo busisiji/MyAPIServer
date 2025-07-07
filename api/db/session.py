@@ -1,4 +1,4 @@
-# app/db/session.py
+# 启用 SQLite 的 WAL模式
 from sqlalchemy import create_engine, event
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy.ext.declarative import declarative_base
