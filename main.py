@@ -49,6 +49,7 @@ app.include_router(user_router)
 app.include_router(chess_router)
 app.include_router(dobot_router)
 app.include_router(collect_data)
+app.include_router(train_router)
 
 # 添加全局异常处理器
 add_exception_handlers(app)
