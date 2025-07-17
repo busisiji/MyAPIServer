@@ -2,7 +2,9 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/Chinese-Chessbot" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/src/cchessAI" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/src/cchessAI/torch2trt" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/chinese_chess_recognition" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/yolov5-D435i" vcs="Git" />
   </component>
 </project>
